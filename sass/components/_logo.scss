@@ -1,0 +1,16 @@
+.logo {
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $text-color-light-secondary;
+  &--place {
+    padding: 24px 93px 25px 0;
+  }
+  &__navigation {
+    color: #000000;
+  }
+  &__foot {
+    color: $text-color-light-primary;
+  }
+}

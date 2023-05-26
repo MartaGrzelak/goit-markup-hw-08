@@ -1,0 +1,16 @@
+.section {
+  padding: 94px 0;
+  &--color {
+    background: #f5f4fa;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &--place {
+    padding-top: 0;
+  }
+}

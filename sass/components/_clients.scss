@@ -1,0 +1,24 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    background-color: transparent;
+    fill: #afb1b8;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: $text-color-light-secondary;
+      border-color: $text-color-light-secondary;
+    }
+  }
+}

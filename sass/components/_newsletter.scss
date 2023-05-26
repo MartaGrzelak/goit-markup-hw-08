@@ -1,0 +1,41 @@
+.newsletter {
+  color: $text-color-light-primary;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  &__email {
+    width: 358px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: $bg-color-dark;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    outline: none;
+    margin-right: 12px;
+  }
+  &__button {
+    background-color: $bg-color-light;
+    color: $text-color-light-primary;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-style: hidden;
+    padding: 10px 24px 10px 42px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.85;
+    letter-spacing: 0.06em;
+    fill: $bg-color-primary;
+  }
+  &__icon {
+    margin-left: 24px;
+  }
+}
