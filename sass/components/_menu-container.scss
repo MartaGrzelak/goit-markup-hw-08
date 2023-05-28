@@ -1,22 +1,15 @@
+.menu-container.is-open {
+  transform: translateX(0);
+}
 .menu-container {
   position: fixed;
   inset: 0;
   padding: 32px;
   background-color: #fff;
-  z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-transform: translateX(100%);
   transform: translateX(100%);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;

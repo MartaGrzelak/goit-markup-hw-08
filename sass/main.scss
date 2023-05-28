@@ -1,4 +1,5 @@
 @import "utils/variables";
+@import "utils/partial-mixins";
 @import "components/active-border";
 @import "components/address";
 @import "components/backdrop";
@@ -21,7 +22,6 @@
 @import "components/section";
 @import "components/team";
 @import "components/work";
-@import "utils/partial-mixins";
 @import "components/navigation-mobile";
 @import "components/menu-container";
 @import "components/menu-toggle";
