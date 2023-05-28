@@ -2,13 +2,35 @@
   padding: 94px 0;
   &--color {
     background: #f5f4fa;
+    width: 480px;
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__header--hidden {
+    display: none;
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      text-align: center;
+      margin-bottom: 50px;
+    }
   }
   &__header {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @include desktop {
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 50px;
+    }
   }
   &--place {
     padding-top: 0;

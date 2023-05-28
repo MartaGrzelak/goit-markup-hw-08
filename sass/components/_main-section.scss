@@ -1,8 +1,36 @@
 .main-section {
   text-align: center;
   margin: auto;
-  max-width: 1600px;
+
   background: $bg-color-dark;
   background-image: url("../images/img17.jpg");
+  width: 480px;
+  height: 400px;
   background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/img17.jpg");
+  }
+  @include tablet {
+    width: 768px;
+    height: auto;
+    background-image: url("../images/img17.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/img17.jpg");
+    }
+  }
+
+  @include desktop {
+    width: 1600px;
+    height: auto;
+    background-image: url("../images/img17.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/img17.jpg");
+    }
+  }
 }

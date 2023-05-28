@@ -4,18 +4,41 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include tablet {
+      justify-content: center;
+    }
+    @include desktop {
+      justify-content: space-between;
+    }
   }
   &__menu-primary {
+    display: none;
     @extend.header__navigation;
-    gap: 46px;
+    @include tablet {
+      font-size: 14px;
+      display: flex;
+      margin-right: 101px;
+      gap: 60px;
+    }
+    @include desktop {
+      gap: 46px;
+    }
   }
   &__menu-secondary {
+    display: none;
     @extend.header__navigation;
-    gap: 50px;
+    @include tablet {
+      display: block;
+    }
+    @include desktop {
+      gap: 50px;
+      display: flex;
+    }
   }
   &__menu-secondary-contact {
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
     column-gap: 10px;
     font-weight: 500;
     font-size: 14px;
@@ -30,10 +53,26 @@
       color: $text-color-light-secondary;
       fill: $text-color-light-secondary;
     }
+    @include tablet {
+      font-size: 12px;
+      row-gap: 10px;
+    }
+    @include desktop {
+      display: flex;
+      font-size: 14px;
+    }
   }
   &__menu-primary-link {
-    @extend.header__menu-secondary-contact;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: $text-color-dark-secondary;
     &:hover,
     &:focus {
@@ -43,5 +82,21 @@
   }
   &__menu-primary li {
     position: relative;
+  }
+  &__menu-envelope {
+    width: 14px;
+    height: 10px;
+    @include desktop {
+      width: 16px;
+      height: 12px;
+    }
+  }
+  &__menu-tel {
+    width: 10px;
+    height: 14px;
+    @include desktop {
+      width: 10px;
+      height: 16px;
+    }
   }
 }

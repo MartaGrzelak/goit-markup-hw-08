@@ -6,7 +6,7 @@
 @import "components/clients";
 @import "components/form";
 @import "components/foot";
-@import "components/generals";
+@import "utils/generals";
 @import "components/header";
 @import "components/is-hidden";
 @import "components/join";
@@ -21,3 +21,10 @@
 @import "components/section";
 @import "components/team";
 @import "components/work";
+@import "utils/partial-mixins";
+@import "components/navigation-mobile";
+@import "components/menu-container";
+@import "components/menu-toggle";
+@import "components/mobile-contact";
+@import "components/mobile-navigation";
+@import "components/mobile-social-media";

@@ -1,7 +1,18 @@
 .clients {
   display: flex;
-  justify-content: space-between;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 15px;
+  @include tablet {
+    margin: 0;
+  }
+  @include desktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin: 0 auto;
+  }
   &__icon {
     display: flex;
     align-items: center;
@@ -19,6 +30,14 @@
     &:focus {
       fill: $text-color-light-secondary;
       border-color: $text-color-light-secondary;
+    }
+    @include tablet {
+      width: 226px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      width: 170px;
     }
   }
 }

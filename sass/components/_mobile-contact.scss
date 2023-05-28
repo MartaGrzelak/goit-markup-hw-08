@@ -1,0 +1,25 @@
+.mobile-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 32px;
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #757575;
+  }
+  &__link--tel {
+    color: #2196f3;
+    font-size: 34px;
+    line-height: 40px;
+  }
+  @include tablet {
+    display: none;
+  }
+}

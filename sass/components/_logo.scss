@@ -1,11 +1,24 @@
 .logo {
   font-family: $font-secondary;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
   color: $text-color-light-secondary;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include desktop {
+    pading: 0;
+  }
   &--place {
-    padding: 24px 93px 25px 0;
+    padding-right: 276px;
+    @include tablet {
+      padding: 26px 83px 26px 15px;
+    }
+    @include desktop {
+      font-size: 26px;
+      line-height: 1.2;
+      padding: 24px 93px 25px 0;
+    }
   }
   &__navigation {
     color: #000000;
