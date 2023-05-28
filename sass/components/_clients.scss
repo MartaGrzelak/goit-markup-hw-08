@@ -3,9 +3,8 @@
   flex-wrap: wrap;
   gap: 30px;
   margin: 0 15px;
-  @include tablet {
-    margin: 0;
-  }
+  justify-content: space-around;
+
   @include desktop {
     width: 100%;
     display: flex;

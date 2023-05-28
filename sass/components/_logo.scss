@@ -10,6 +10,7 @@
     pading: 0;
   }
   &--place {
+    padding-left: 15px;
     padding-right: 276px;
     @include tablet {
       padding: 26px 83px 26px 15px;

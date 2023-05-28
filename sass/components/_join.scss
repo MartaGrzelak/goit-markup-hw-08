@@ -5,10 +5,22 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  @include tablet {
+    margin-left: 144px;
+  }
+  @include desktop {
+    margin-left: 0;
+  }
+
   &--top {
-    padding-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    @include tablet {
+      padding-top: 0;
+    }
     @include desktop {
       padding-top: 12px;
+      padding-bottom: 0;
     }
   }
   &__list {

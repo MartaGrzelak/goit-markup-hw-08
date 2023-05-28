@@ -1,7 +1,9 @@
 .news-place {
-  padding-top: 60px;
+  padding-top: 20px;
+  @include tablet {
+    margin-left: 77px;
+  }
   @include desktop {
     padding-top: 12px;
-    margin-left: 77px;
   }
 }

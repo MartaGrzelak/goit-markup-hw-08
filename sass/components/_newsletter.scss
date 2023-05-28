@@ -6,7 +6,7 @@
   line-height: 1.14;
   text-transform: uppercase;
   &__email {
-    width: 100%;
+    width: 450px;
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 16px;
@@ -19,10 +19,18 @@
     padding-bottom: 15px;
     padding-left: 16px;
     outline: none;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
     @include desktop {
       width: 358px;
       height: 50px;
       display: flex;
+      flex-wrap: nowrap;
       margin-right: 12px;
       margin-bottom: 0;
     }
@@ -50,7 +58,8 @@
     margin-left: 24px;
   }
   &__container {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
     @include desktop {
       display: flex;
     }

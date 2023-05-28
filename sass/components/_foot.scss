@@ -1,5 +1,17 @@
 .foot {
+  margin: 0 auto;
+  width: 480px;
+  height: 603px;
   background: $bg-color-dark;
   padding: 60px 0;
   display: flex;
+  @include tablet {
+    width: 768px;
+    height: 463px;
+  }
+  @include desktop {
+    height: auto;
+    width: 1600px;
+    margin: 0 auto;
+  }
 }
